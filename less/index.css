@@ -212,6 +212,9 @@ h3 {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+.aboutArea h3 {
+  margin-left: 10px;
+}
 .aboutArea p {
   margin-top: -100px;
   margin-left: 40px;
@@ -308,7 +311,10 @@ td {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin-top: 30px;
+  }
+  .aboutArea p {
+    margin: 0px;
+    margin-left: 15px;
   }
   li {
     margin-left: 30px;
@@ -320,7 +326,20 @@ td {
     margin-bottom: 20px;
   }
   table {
+    max-width: 100%;
     display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  table td,
+  table tr,
+  table th {
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    text-align: center;
+    padding: 10px 0px;
   }
   footer {
     background-color: gray;
@@ -334,5 +353,8 @@ td {
   }
   .bottomSection {
     background-color: #3f88a8;
+  }
+  * {
+    margin: 0 auto;
   }
 }
