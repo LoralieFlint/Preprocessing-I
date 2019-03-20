@@ -56,10 +56,8 @@ table {
 html, body {
     height: 100%;
 }
-
-
 @background: #3f88a8;
-  body {
+body {
 	background-color:@background;
   }
   @link-color: #c1c6cc;
@@ -155,6 +153,7 @@ h3 {
 }
 li {
 	font-weight: normal;
+	list-style-type: disc;
 	margin-bottom: 20px;
 	margin-top: 10px;
 	font-size: 1.2rem;
@@ -175,8 +174,12 @@ footer p {
 	text-align: center;
 }
 table, th, td {
+	width: 100%;
 	border: 1px solid black;
 	margin-bottom: 20px;
+}
+table {
+	display: block;
 }
 th, td {
   padding: 15px;
@@ -189,4 +192,71 @@ th {
 }
 td {
 	background-color: #aeb1b7;
+}
+
+
+@media screen and ( max-width: 500px) {
+	body{
+		width: auto;
+	}
+nav {
+	display: flex;
+	flex-direction: column;
+}
+	nav a {
+		text-decoration: underline;
+		margin: auto;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	 }
+	.top-section {
+		height: auto;
+		margin: auto;
+		width: 300px;
+		}
+		.top-section img{ 
+			margin-top: 50px;
+			margin: 0auto;
+			margin-bottom: 20px;
+			max-width: 20%;
+			max-height: 20%;
+		}
+
+		.middleSection {
+			display: flex;
+			flex-direction: column;
+		}
+		.aboutArea {
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+			margin-top: 30px;
+		}
+		li {
+			margin-left: 30px;
+		}
+		.list {
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+			margin-bottom: 20px;
+		}
+	table{
+		display: block;
+	}
+		footer {
+			background-color: gray;
+			 &:extend(.top-section);
+			 padding: 20px;
+			 height: 60px;
+			 margin:  auto;
+		}
+		footer p {
+			color: white;
+			text-align: center;
+		}
+		.bottomSection {
+
+			background-color: @background;
+		}
 }
