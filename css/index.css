@@ -136,6 +136,7 @@ body {
 }
 body {
   background-color: #3f88a8;
+  height: auto;
 }
 nav {
   margin-right: 50px;
@@ -217,7 +218,7 @@ h3 {
 }
 .aboutArea p {
   margin-top: -100px;
-  margin-left: 40px;
+  margin-left: 10px;
   margin-bottom: 20px;
   font-size: 1.4rem;
 }
@@ -249,15 +250,16 @@ footer p {
   color: white;
   text-align: center;
 }
+.myWork {
+  margin-left: 15%;
+}
 table,
 th,
 td {
-  width: 100%;
+  width: 70%;
   border: 1px solid black;
   margin-bottom: 20px;
-}
-table {
-  display: block;
+  margin: auto;
 }
 th,
 td {
@@ -267,10 +269,15 @@ td {
 th {
   font-weight: bold;
   font-size: 1.6rem;
+  width: 28%;
   background-color: #cccccc;
 }
 td {
   background-color: #aeb1b7;
+  width: 28%;
+}
+.bottomBox {
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 500px) {
   body {
